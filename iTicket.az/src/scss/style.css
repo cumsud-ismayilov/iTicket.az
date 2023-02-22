@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cookie&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+.mobile-nav {
+  background-color: #f9f9f9;
+  margin-top: 15px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+  }
+}
+.mobile-nav .container .row .menu .bi-list {
+  cursor: pointer;
+  font-size: 21px;
+}
+.mobile-nav .container .row .menu-logo {
+  display: flex;
+  align-items: center;
+  width: 249px;
+  justify-content: center;
+}
+.mobile-nav .container .row .menu-logo img {
+  width: 113px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.mobile-nav .container .row .menu-end {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: right;
+}
+.mobile-nav .container .row .menu-end .bi-cart {
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+.mobile-nav .container .row .menu-end .bi-person {
+  color: #000000;
+  background: #FFDD00;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mobile-nav .carousel {
+  margin-top: 10px;
+}
+
+.desktop-nav {
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+.desktop-nav .container .row .nav-img {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.desktop-nav .container .row .nav-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 26px;
+}
+.desktop-nav .container .row .nav-img .row .nav-top {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+}
+.desktop-nav .container .row .nav-img .row .nav-top img {
+  width: 175px;
+  height: 46px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle ul {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 17px;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle ul .lang {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 13px;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle ul .lang .english {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px 0px 0px 5px;
+  padding: 2px;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle ul .lang .russian {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0px 5px 5px 0px;
+  padding: 2px;
+}
+.desktop-nav .container .row .nav-img .row .nav-middle ul li {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.desktop-nav .container .row .nav-img .row .nav-end {
+  position: absolute;
+  top: 3%;
+  left: 81%;
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+}
+.desktop-nav .container .row .nav-img .row .nav-end .bi-heart {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  cursor: pointer;
+}
+.desktop-nav .container .row .nav-img .row .nav-end .bi-search {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  cursor: pointer;
+}
+.desktop-nav .container .row .nav-img .row .nav-end .bi-cart {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  cursor: pointer;
+}
+.desktop-nav .container .row .nav-img .row .nav-end .bi-person {
+  color: #000000;
+  background: #FFDD00;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+main #banner {
+  padding-top: 31px;
+  background-color: #f9f9f9;
+  padding-bottom: 43px;
+}
+main #banner .container .row .popular h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #banner .container .row .cards .cards-img {
+  position: relative;
+}
+main #banner .container .row .cards .cards-img .img1 {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #banner .container .row .cards .cards-img .img2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #banner .container .row .cards .cards-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #banner .container .row .cards .cards-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #children {
+  background: linear-gradient(to bottom right, #fd0 0, #fd0 50%, #f9f9f9 0, #f9f9f9);
+}
+main #children .container .row .child-text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #children .container .row .child-card .cards-img {
+  width: 100%;
+  height: 439px;
+  position: relative;
+}
+main #children .container .row .child-card .cards-img .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+main #children .container .row .child-card .cards-img .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+main #children .container .row .child-card .cards-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #children .container .row .child-card .cards-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #point {
+  background-color: #f9f9f9;
+}
+main #point .container .row .point-img {
+  width: 100%;
+  height: 100%;
+}
+main #point .container .row .point-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main #tourism {
+  background-color: #f9f9f9;
+}
+main #tourism .container .row .tour-text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #tourism .container .row .tour-card .tour-img {
+  width: 100%;
+  height: 439px;
+  position: relative;
+}
+main #tourism .container .row .tour-card .tour-img .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+main #tourism .container .row .tour-card .tour-img .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+main #tourism .container .row .tour-card .tour-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #tourism .container .row .tour-card .tour-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #performance {
+  background-color: #f9f9f9;
+  padding-bottom: 36px;
+}
+main #performance .container .row .perf-text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #performance .container .row .perf-card .perf-img {
+  width: 100%;
+  height: 439px;
+  position: relative;
+}
+main #performance .container .row .perf-card .perf-img .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+main #performance .container .row .perf-card .perf-img .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+main #performance .container .row .perf-card .perf-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #performance .container .row .perf-card .perf-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #weekend {
+  background: linear-gradient(to bottom right, #fd0 0, #fd0 50%, #f9f9f9 0, #f9f9f9);
+}
+main #weekend .container .row .week-text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #weekend .container .row .week-card .week-img {
+  width: 100%;
+  height: 439px;
+  position: relative;
+}
+main #weekend .container .row .week-card .week-img .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+main #weekend .container .row .week-card .week-img .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+main #weekend .container .row .week-card .week-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #weekend .container .row .week-card .week-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #innovation {
+  background: linear-gradient(to bottom right, #fd0 0, #fd0 50%, #f9f9f9 0, #f9f9f9);
+  margin-top: 72px;
+}
+main #innovation .container .row .inno-text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+main #innovation .container .row .inno-card .inno-img {
+  width: 100%;
+  height: 439px;
+  position: relative;
+}
+main #innovation .container .row .inno-card .inno-img .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+main #innovation .container .row .inno-card .inno-img .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+main #innovation .container .row .inno-card .inno-img .hover-text {
+  font-size: 20px;
+  color: honeydew;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  z-index: 11;
+}
+main #innovation .container .row .inno-card .inno-img .hover-button {
+  background-color: #FFDD00;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  padding: 9px;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  z-index: 11;
+  cursor: pointer;
+}
+main #price {
+  background-color: #f9f9f9;
+}
+main #price .container .row .price-bg {
+  background-color: rgb(255, 221, 0);
+  border-radius: 23px;
+  position: relative;
+}
+main #price .container .row .price-bg .row .cong-text {
+  width: 582px;
+  margin: 0 auto;
+  padding-bottom: 57px;
+}
+@media screen and (max-width: 768px) {
+  main #price .container .row .price-bg .row .cong-text {
+    width: 300px;
+  }
+}
+main #price .container .row .price-bg .row .cong-text p {
+  font-size: 49px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0px 0px 20px;
+}
+@media screen and (max-width: 768px) {
+  main #price .container .row .price-bg .row .cong-text p {
+    font-size: 25px;
+  }
+}
+main #price .container .row .price-bg .row .cong-text h6 {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px 0px 56px;
+}
+main #price .container .row .price-bg .row .cong-text .play-img {
+  margin-top: 61px;
+  background-color: #000000;
+  border-radius: 15px;
+  width: 346px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+@media screen and (max-width: 768px) {
+  main #price .container .row .price-bg .row .cong-text .play-img {
+    width: 308px;
+  }
+}
+main #price .container .row .price-bg .row .cong-text .play-img img {
+  width: 126px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+main #price .container .row .price-bg .row .events-img {
+  width: 278px;
+  position: absolute;
+  top: -34px;
+}
+@media screen and (max-width: 768px) {
+  main #price .container .row .price-bg .row .events-img {
+    display: none;
+  }
+}
+main #price .container .row .price-bg .row .events-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer {
+  background-color: #f9f9f9;
+}
+footer .container .row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+footer .container .row .part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+footer .container .row .part1 .foot-logo {
+  width: 161px;
+  height: 48px;
+}
+footer .container .row .part1 .foot-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  cursor: pointer;
+}
+footer .container .row .part1 p {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 45px;
+}
+footer .container .row .part1 h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+}
+footer .container .row .part2 h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0px 0px 20px;
+}
+footer .container .row .part2 ul {
+  list-style: none;
+  padding: 0;
+}
+footer .container .row .part2 ul li {
+  color: #646464;
+  font-size: 18px;
+  margin: 0px 0px 12px;
+  cursor: pointer;
+}
+footer .container .row .part3 h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0px 0px 20px;
+}
+footer .container .row .part3 ul {
+  list-style: none;
+  padding: 0;
+}
+footer .container .row .part3 ul li {
+  color: #646464;
+  font-size: 18px;
+  margin: 0px 0px 12px;
+  cursor: pointer;
+}
+footer .container .row .part4 h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0px 0px 20px;
+}
+footer .container .row .part4 p {
+  color: #646464;
+  font-size: 18px;
+  margin: 0px 0px 12px;
+  cursor: pointer;
+}
+footer .container .row .part4 .visa-logo {
+  width: 221px;
+  height: 30px;
+}
+footer .container .row .part4 .visa-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: 28px 0px 0px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  footer .container .row .mmc {
+    margin-top: 38px;
+  }
+}
+footer .container .row .mmc p {
+  color: #646464;
+  font-size: 18px;
+  margin: 0px 0px 12px;
+}
+footer .container .row .social-icon {
+  background-color: rgb(255, 221, 0);
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  width: 328px;
+  height: 60px;
+  justify-content: center;
+}
+footer .container .row .social-icon i {
+  color: #000000;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  outline: none;
+}/*# sourceMappingURL=style.css.map */
